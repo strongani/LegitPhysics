@@ -19,6 +19,28 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var mechanicalPhysicsLabel: UILabel!
+    
+    @IBOutlet weak var whatIsMechanicalPhysics: UILabel!
+    
+    //whatIsMechanicalPhysics.isHidden = true
+    
+    @IBOutlet weak var whatDoesThisAppDo: UILabel!
+    
+    //whatDoesThisAppDo.isHidden = true
+    
+    @IBAction func tapAnywhereToCountinueButton(_ sender: UIButton) {
+        
+        if mechanicalPhysicsLabel.isHidden == true {
+            whatDoesThisAppDo.isHidden = false
+            whatIsMechanicalPhysics.isHidden = true
+        } else {
+            mechanicalPhysicsLabel.isHidden = true
+            whatIsMechanicalPhysics.isHidden = false
+        }
+        
+    }
+    
 
 
 }
